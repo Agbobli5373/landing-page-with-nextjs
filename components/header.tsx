@@ -29,7 +29,7 @@ export default function header() {
   return (
     <nav
       style={{ backgroundColor: `${bgcolor}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300 py-5 flex flex-row justify-between px-5  items-center bg-gray-100"
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-300 py-5 flex flex-row justify-between px-5  items-center bg-gray-100 shadow"
     >
       <h1 style={{ color: `${textColor}` }} className="font-bold text-4xl">
         AI
@@ -48,10 +48,10 @@ export default function header() {
           </li>
           <li className="p-4">
           <div className="flex gap-6">
-           <Link href={"/"}><FaFacebook color={textColor}/></Link>
-           <Link href={"/"}><FaTwitter color={textColor}/> </Link>
-           <Link href={"/"}><FaYoutube color={textColor}/> </Link>
-           <Link href={"/"}><FaWhatsapp color={textColor}/> </Link>
+           <Link passHref href={"/"}><FaFacebook color={textColor}/></Link>
+           <Link passHref  href={"/"}><FaTwitter color={textColor}/> </Link>
+           <Link passHref  href={"/"}><FaYoutube color={textColor}/> </Link>
+           <Link passHref  href={"/"}><FaWhatsapp color={textColor}/> </Link>
            </div>
           </li>
         </ul>
